@@ -4,31 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Jhonny Pimiento</title>
+    <link rel="stylesheet" href="images/favicon.ico ">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ol>
-                <li>
-                    <a href="Portafolio"></a>
-                </li>
-            </ol>
-            <ol>
-                <li>
-                    <a href="   Experiencia"></a>
-                </li>
-            </ol>
-            <ol>
-                <li>
-                    <a href="Trabajemos juntos"></a>
-                </li>
-            </ol>
-        </nav>
-        <section>seccion principal</section>
-        <section>seccion portafolio</section>
-        <section>seccion eventos</section>
-        <footer>footer</footer>
+    <header class="header">
+        <div>
+            <figure class="logo">
+                <img src="images/logo-platzi.png" alt="Logo de http://joneshdesign.com">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="./portafolio/index.html">Portafolio</a>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
+    <section class="hero" >
+        <h1>
+            Hola! Soy <strong>Jhonny Pimiento</strong> Desarrollador <br> <strong>JavaScript</strong> con <br> pasion por el aprendizaje
+        </h1>
+        <img src="images/vano.jpg" width="500" alt="imagen principal del sitio"/>
+        <section id="portafolio" class="portfolio">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <h3 class="project-title">Platzi video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"> <small>Fecha: </small>18/09/2019</p>
+                <p class="project-url"> <small>Puedes verlo en: </small>https://www.youtube.com/joneshdesign</p>
+                <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <figure class="project-imageContainer">
+                    <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:526px;height:434px;"/>
+                </figure>
+            </article>
+        </section>
+        <section id="eventos">
+            <h2>Mas sobre mi experiencia</h2>
+            <article>
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/nodeconf.jpg" width="500" alt="nodeconf en medellin"/>
+                </figure>
+                <h3 class="event-title">NodeConf Medell&iacute;n 2019</h3>
+                <p class="event-description">NodeConf Colombia 2019 es el primer evento internacional centrado en todo el ecosistema Node.js.</p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank"></a>
+            </article>
+        </section>
+        <section id="contacto" class="contact">
+            <form action="/suscripcion/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Dejame tu email" id="email">
+            <button>Enviar</button>
+            </form>
+        </section>
+        <footer class="footer">footer</footer>
+
 </body>
 </html>
