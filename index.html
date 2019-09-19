@@ -16,17 +16,17 @@
             <nav>
                 <ol>
                     <li>
-                        <a href="#">Portafolio</a>
+                        <a href="#portafolio">Portafolio</a>
                     </li>
                 </ol>
                 <ol>
                     <li>
-                        <a href="#">Experiencia</a>
+                        <a href="#eventos">Experiencia</a>
                     </li>
                 </ol>
                 <ol>
                     <li>
-                        <a href="#">Trabajemos juntos</a>
+                        <a href="#contacto">Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
@@ -37,7 +37,7 @@
             Hola! Soy <strong>Jhonny Pimiento</strong> Desarrollador <br> <strong>JavaScript</strong> con <br> pasion por el aprendizaje
         </h1>
         <img src="images/vano.jpg" width="500" alt="imagen principal del sitio"/>
-        <section>
+        <section id="portafolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
             <article>
                 <h3>Platzi video</h3>
@@ -48,7 +48,7 @@
             </article>
             <img src="images/edot.jpg" alt="imagen de rutaN" style="width:526px;height:434px;"/>
         </section>
-        <section>
+        <section id="eventos">
             <h2>Mas sobre mi experiencia</h2>
             <article>
                 <figure>
@@ -57,7 +57,13 @@
                 <h3>NodeConf Medell&iacute;n 2019</h3>
             </article>
         </section>
-        <section>seccion eventos</section>
+        <section id="contacto">
+            <form action="/suscripcion">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Dejame tu email" id="email">
+            <button>Enviar</button>
+            </form>
+        </section>
         <footer>footer</footer>
 
 </body>
