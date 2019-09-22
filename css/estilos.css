@@ -35,27 +35,45 @@ h1 {
     letter-spacing: -.2px;
     color: white;
     /* margin: top right bottom left; */
-    margin: 100px 520px 70px 30px;
+    /* margin: 100px 520px 70px 30px; */
 /*     text-transform: uppercase;
     text-decoration: underline; */
-
+    margin: 0;
 }
 
 h1 strong {
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source San Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .hero {
     height: 300px;
-    background-image: url('../images/vano.jpg');
+    /* background-image: url('../images/vano.jpg'); */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-image {
+    object-fit: cover;
 }
 
 .portfolio {
     background: #fafafa;
+    padding: 20px;
 }
 
 .project {
@@ -75,6 +93,43 @@ h1 strong {
     margin-bottom: 15px;
     padding: 20px;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-url a {
+    text-decoration-line: underline;
+    color: lightskyblue;
+    font: caption;
+    /* caption-side: bottom; */
+    text-decoration: blink;
+    pointer-events: bounding-box;
+}
+
+.project-description {
+    font-size:20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+/* .project-date {
+    margin: 10px 0;
+} */
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .project-details {
@@ -90,8 +145,9 @@ h1 strong {
     color: white;
     /* padding-top: 10px; */
     display: flex;
-    height: 90px;
+    height: 70px;
     justify-content: space-between;
+    align-items: center;
 }
 
 ol,
@@ -99,6 +155,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-weight: 600;
 }
 
 .figure {
@@ -142,9 +199,159 @@ ul {
 .box {
     width:  50px;
     height: 50px;
-    margin: 5px;
+    margin:  5px;
     border: 1px solid red;
 
     flex-shrink: 0;
+}
+
+.footer {
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 110px;
+    display: flex;
+    padding: 20px 0;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title {
+    margin-left: 20px;
+}
+
+.event {
+    margin: 15px;
+    width: 466px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event-imageContainer {
+    width: inherit;
+    margin: 0;
+
+}
+
+.event-image {
+    width: inherit;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    /* align-content: flex-start; */
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('../images/bek0y-zfkz5.svg');
+}
+
+.social-link.linkedin {
+    background-image: url('../images/linkedin.svg');
+}
+
+.social-link.github {
+    background-image: url('../images/github.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../images/instagram.svg');
+}
+
+.form-email input {
+    border-color: gray;
+    padding: 10px 20px 10px 25px;
+    border-style: solid;
+    border-radius: 5px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    background:  transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3 {
+    font-family: 'Source San Pro', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    height: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
 }
 

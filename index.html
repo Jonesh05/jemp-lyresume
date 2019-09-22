@@ -8,82 +8,145 @@
     <link rel="stylesheet" href="images/favicon.ico ">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
     <header class="header">
-        <figure class="logo">
-            <img src="images/logo-platzi.png" alt="Logo de http://joneshdesign.com">
-        </figure>
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="./portafolio/index.html">Portafolio</a>
-                </li>
-            </ol>
-            <ol>
-                <li>
-                    <a class="link" href="#eventos">Experiencia</a>
-                </li>
-            </ol>
-            <ol>
-                <li>
-                    <a class="link" href="#contacto">Trabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo-platzi.png" width="80" alt="Logo de http://joneshdesign.com">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
     <section class="hero" >
-        <h1>
-        Hola! Soy <strong>Jhonny Pimiento</strong><br> Desarrollador <strong>JavaScript</strong> con <br> pasion por el <strong>aprendizaje</strong>
-    </h1>
+        <div class="container">
+            <h1>
+            Hola! Soy <strong>Jhonny Pimiento</strong><br> Desarrollador <strong>JavaScript</strong> con <br> pasion por el <strong>aprendizaje</strong>
+            </h1>
+            <img class="hero-image" src="images/vano.jpg" width="500" height="300" alt="imagen de hero">
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-    <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Platzi video</h3>
-                <h6 class="project-course">React Native / React</h6>
-                <p class="project-date"> <small>Fecha: </small>18/09/2019</p>
-                <p class="project-url"> <small>Puedes verlo en: </small>https://www.youtube.com/joneshdesign</p>
-                <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <figure class="project-imageContainer">
-                <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:526px;height:434px;"/>
-            </div>
-            </figure>
-        </article>
-        <article class="project">
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Platzi video</h3>
                     <h6 class="project-course">React Native / React</h6>
-                    <p class="project-date"> <small>Fecha: </small>18/09/2019</p>
-                    <p class="project-url"> <small>Puedes verlo en: </small>https://www.youtube.com/joneshdesign</p>
+                    <p class="project-date"> <small><strong> Fecha:</strong> 18/09/2019</small></p>
+                    <p class="project-url"> <small><strong> Puedes verlo en:</strong> </small><a href="https://www.youtube.com/joneshdesign">https://www.youtube.com/joneshdesign</a></p>
                     <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
                 <figure class="project-imageContainer">
                     <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:526px;height:434px;"/>
-                </div>
+
                 </figure>
             </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"> <small><strong> Fecha:</strong>18/09/2019</small></p>
+                    <p class="project-url"> <small><strong>Puedes verlo en:</strong>  </small> <a href="https://www.youtube.com/joneshdesign">https://www.youtube.com/joneshdesign</a></p>
+                    <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:526px;height:434px;"/>
+                </figure>
+            </article>
+        </div>
     </section>
-    <section id="eventos">
-        <h2>Mas sobre mi experiencia</h2>
-        <article>
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/nodeconf.jpg" width="500" alt="nodeconf en medellin"/>
-            </figure>
-            <h3 class="event-title">NodeConf Medell&iacute;n 2019</h3>
-            <p class="event-description">NodeConf Colombia 2019 es el primer evento internacional centrado en todo el ecosistema Node.js.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank"></a>
-        </article>
+    <div class="container">
+        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+    </div>
+    <section id="eventos" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/nodeconf.jpg" width="500" alt="nodeconf en medellin"/>
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">NodeConf Medell&iacute;n 2019</h3>
+                    <p class="event-description">NodeConf Colombia 2019 es el primer evento internacional centrado en todo el ecosistema Node.js</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank">Ver video</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/vivemaker.jpg" width="500" alt="nodeconf en medellin"/>
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Hackathon ViveMaker_CO 2018</h3>
+                      <p class="event-description">Durante 3 d&iacute;as desarrollamos X proyecto de IoT en Barrancabermeja - Colombia. Participaron ocho equipos en la categoria MakerPRO y Novatos. Con nuestro prototipo de IoT concursamos y finaliz&oacute; entre los dos mejores</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank">Ver video</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/nodeconf.jpg" width="500" alt="nodeconf en medellin"/>
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">NodeConf Medell&iacute;n 2019</h3>
+                    <p class="event-description"> LOREM IPSUM </p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank">Ver video</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/nodeconf.jpg" width="500" alt="nodeconf en medellin"/>
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">NodeConf Medell&iacute;n 2019</h3>
+                    <p class="event-description">NodeConf Colombia 2019 es el primer evento internacional centrado en todo el ecosistema Node.js</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RcjIdN6G7Kc" target="blank">Ver video</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-        <h3>¿Creamos algo juntos?</h3>
-        <input type="text" placeholder="Dejame tu email" id="email">
-        <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Dejame tu email" id="email">
+            <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/jonesh5off" class="social-link twitter"></a>
+                <a href="https://www.linkedin.com/in/jhonny-pimiento-a21a3473/" class="social-link linkedin"></a>
+                <a href="https://github.com/jonesh05/" class="social-link github"></a>
+                <a href="https://instagram.com/jons.pimiento/" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
-    <footer class="footer">footer
-
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p class="footer-copyright">Curso de Desarrollo Web Online Copyright © 2019<img src="images/logo-platzi.png" alt="logo de platzi" width="80">- All rights reserved
+                </p>
+            </div>
+            <div>
+                <p>
+                    Designed with <\3 by  <a href="https://twitter.com/ThespianArtist"> @ThespianArtist</a>
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
