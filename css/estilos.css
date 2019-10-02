@@ -157,9 +157,8 @@ h2 {
 }
 
 .project-url a {
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: lightskyblue;
-    font: caption;
     /* caption-side: bottom; */
     text-decoration: blink;
     pointer-events: bounding-box;
