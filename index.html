@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jhonny Pimiento</title>
-    <link rel="stylesheet" href="images/favicon.ico ">
+    <link rel="stylesheet" href="https://i.imgur.com/RRSdYV5.png"width="5" height="5">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/media.css" media="screen and (max-width:678px)"> -->
@@ -17,7 +17,7 @@
             }
         }
     </style>-->
-    <meta name=“viewport” content=“width=device-width initial-scale=1” >
+    <!-- <meta name=“viewport” content=“width=device-width initial-scale=1” > -->
 </head>
 <body>
     <div class="icon-menu burger-button">
@@ -41,7 +41,7 @@
                 </ol>
                 <ol>
                     <li>
-                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                        <a class="link border" href="#contacto">Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
@@ -60,27 +60,27 @@
             <h2>Portafolio (Proyectos Destacados)</h2>
             <article class="project">
                 <div class="project-details">
-                    <h3 class="project-title">Platzi video</h3>
-                    <h6 class="project-course">React Native / React</h6>
+                    <h3 class="project-title">Curso de Responsive Design</h3>
+                    <h6 class="project-course"> Mobile First / Now CSS Grid</h6>
                     <p class="project-date"> <small><strong> Fecha:</strong> 18/09/2019</small></p>
                     <p class="project-url"> <small><strong> Puedes verlo en:</strong> </small><a href="https://www.youtube.com/joneshdesign">https://www.youtube.com/joneshdesign</a></p>
-                    <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <p class="project-description"> Maquetación aplicaciones con diseño web adaptable. Adapta tus sitios para que funcionen en cualquier pantalla, dispositivo y resolución con HTML5 y CSS3 y genera la mejor experiencia para tus usuarios con Responsive Designe</p>
                 </div>
                 <figure class="project-imageContainer">
-                    <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:480px;height:434px;"/>
+                    <img class="project-imagen" src="https://i.imgur.com/Ac4NXoE.jpg" alt="imagen de rutaN" style="width:480px;height:284px;"/>
 
                 </figure>
             </article>
             <article class="project">
                 <div class="project-details">
-                    <h3 class="project-title">Platzi video</h3>
-                    <h6 class="project-course">React Native / React</h6>
+                    <h3 class="project-title">Curso de Marca Personal</h3>
+                    <h6 class="project-course">Blog / Content Marketing</h6>
                     <p class="project-date"> <small><strong> Fecha:</strong>18/09/2019</small></p>
-                    <p class="project-url"> <small><strong>Puedes verlo en:</strong>   <a href="https://www.youtube.com/joneshdesign">https://www.youtube.com/joneshdesign</a></small></p>
-                    <p class="project-description"> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <p class="project-url"> <small><strong>Puedes verlo en:</strong> </small><a href="https://www.youtube.com/joneshdesign">https://www.youtube.com/joneshdesign</a></p>
+                    <p class="project-description"> Curso de referencia para escalar un medio de alcance global. Es potencialmente una insignia valiosa y te lleva hacer Open Mind para descubrir nuevas oportunidades y marcando una diferencia en el mundo, mejorar la Marca Personal es lo indicado para lograr lo que más anhelas.</p>
                 </div>
                 <figure class="project-imageContainer">
-                    <img class="project-imagen" src="images/edot.jpg" alt="imagen de rutaN" style="width:480px;height:434px;"/>
+                    <img class="project-imagen" src="https://i.imgur.com/3JkzD3q.jpg" alt="imagen de Curso de Marca" style="width:480px;height:284px;"/>
                 </figure>
             </article>
         </div>
@@ -178,13 +178,19 @@
 
         ipad.addEventListener('change', validation)
 
+        const links = document.querySelectorAll('.link')
+
         function validation(event) {
             if (event.matches) {
                 burgerButton.addEventListener('click', hideShow)
+                Array.from(links).forEach( link=> {
+                    link.addEventListener('click', hideShow)
+                })
             } else {
                 burgerButton.removeEventListener('click', hideShow)
             }
         }
+        validation(ipad)
 
         function hideShow() {
             if (menu.classList.contains('is-active')) {
